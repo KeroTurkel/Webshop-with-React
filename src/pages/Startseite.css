@@ -1,0 +1,255 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: normal 20px/32px 'Noto Sans', sans-serif;
+    color: gray;
+}
+
+h1, h2 {
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 32px;
+    margin: 0 0 32px 0;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+h3{
+    color: gray;
+}
+
+p {
+    margin-bottom: 32px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+button{
+    margin-right: 10%;
+    margin-left: 10%;
+    
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+/* content */
+
+.content {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transition: all ease-in-out .3s;
+}
+
+.content-inner {
+    width: 100%;
+    max-width: 100em;
+    margin: auto  auto;
+}
+
+section {
+    margin-bottom: 64px;
+    border-bottom: 3px solid rgb(210, 210, 210);
+    position: relative;
+}
+
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url('../images/startseite-img.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+
+.container1::before { /* Add this block */
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Change this color to the desired darkness level */
+    z-index: 1;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+
+
+.imageContainer {
+    padding: 0 0;
+    width: 40%;
+    align-items: flex-end;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textContainer {
+    flex: 1;
+    position: relative;
+    flex-direction: column; 
+    align-items:  flex-start;
+    color: white;
+    text-align: left;
+    margin: 100px;
+    padding: 0;
+    z-index: 2;
+}
+
+.productImage{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card{
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    max-width: 600px;
+    min-height: 600px;
+    flex-direction: column;
+    background: white;
+    border-radius: 20px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 0px 21px 37px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 21px 37px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card-content{
+    padding: 5px;
+}
+
+
+
+
+/*########## Navigation ###########*/
+.navigation{
+    margin-bottom: 50px;
+    z-index: 4;
+    justify-content: left;
+    align-items: flex-start;
+    align-self: flex-start;
+    text-align: left;
+    
+}
+.nav-stroke{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.nav ul{
+    list-style: none;
+    margin-top: 7%;
+    margin-left: 15.5%;
+    display: flex;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    text-transform: lowercase;
+    
+}
+
+nav ul li a,
+nav ul li a::after,
+nav ul li a::before{
+    transition: all .5s;
+}
+
+nav ul li a:hover{
+    color:#ffffff;
+
+}
+
+nav.stroke ul li a,
+nav.fill ul li a{
+    position: relative;
+
+}
+
+nav.stroke ul li a::after,
+nav.fill ul li a::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #ffffff;
+    height: 1px;
+    
+}
+
+nav.stroke ul li a:hover::after{
+    width: 100%;
+}
+
+nav.fill ul li a {
+    transition: all 2s;
+}
+
+nav.fill ul li a:after{
+    text-align: left;
+    content: ".";
+    margin: 0;
+    opacity: 0;
+}
+
+nav.fill ul li a:hover{
+    color: #434343;
+    z-index: 1;
+}
+
+nav.fill ul li a:hover:after{
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+}
+

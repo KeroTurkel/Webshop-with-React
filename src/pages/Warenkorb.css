@@ -1,0 +1,184 @@
+.container {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-column-gap: 30px;
+    align-items: stretch;   
+  }
+  
+  .left-column {
+    order: 1;
+    color: rgb(226, 226, 226);
+  }
+  
+  .right-column {
+    order: 2;
+    color: rgb(226, 226, 226);
+  }
+
+  .background-img{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    transition: all ease-in-out .3s;
+    min-height: 100%;
+    background-image: url('../images/background-img2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 100%;
+}
+  
+  .form-container {
+    
+    /* bring your own prefixes */
+    max-width: 1500px;
+
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-self: center;
+    padding: 40px;
+  /*the alpha value controls the transparency*/
+    background: rgba(91, 91, 91, 0.3);
+  /* This controls the blurring effect*/
+    backdrop-filter: blur( 7.5px );
+        -webkit-backdrop-filter: blur( 7.5px );
+  /*Adding the shadow*/
+    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.18 );
+  /* Adding our borders*/
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+
+  }
+  
+  .input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    margin-bottom: 5px;
+  }
+  
+  .input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .btn-continue button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .btn-continue button[type="submit"]:hover {
+    background-color: #0062cc;
+  }
+  
+ 
+  
+  .btn-continue button:hover {
+    background-color: #414141;
+  }
+  
+  .productCart-list {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .productCart {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .productCart img {
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  
+  .productCart h3 {
+    margin-bottom: 5px;
+  }
+  
+  .productCart p {
+    color: #6c757d;
+  }
+  
+  .productCart button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  .productCart button:hover {
+    background-color: #c82333;
+  }
+  
+  .total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .total-container p:first-child {
+    font-weight: bold;
+  }
+
+  .double-line{
+    width: 100%;
+    border-width: 2px;
+    padding: 1px;
+    background-color: black;
+  }
+
+  .signup-container label{ 
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(156, 156, 156);
+  }
+
+  .signup-container label input[type="checkbox"]{
+    width: 40px; 
+  }
+
+  .total-container{
+    color: gray;
+  }
+  
+
+
+  
