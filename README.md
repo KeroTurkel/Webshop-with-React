@@ -1,4 +1,6 @@
 # Webshop-with-React
-I created a Webshop with React.js and Firebase
+Ein Teil des Webshops bereits erstellt. 
+Es müssen aber noch Veränderungen vorgenommen werden.
 
-Link to Video: https://youtu.be/FFqMjcrP7OE
+Link updated video: https://youtu.be/j0XM0ilOFp4
+Link to video: https://youtu.be/FFqMjcrP7OE
