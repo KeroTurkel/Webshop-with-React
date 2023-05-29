@@ -1,4 +1,4 @@
-# Webshop-with-React
+# Webshop-with-React + Firebase
 Ein Teil des Webshops bereits erstellt. 
 Es müssen aber noch Veränderungen vorgenommen werden.
 
